@@ -1,0 +1,86 @@
+/* Reseta alguns estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do cabeçalho */
+header {
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Largura total da tela */
+    background-color: rgba(0, 0, 0, 0.7); /* Preto com 70% de opacidade */
+    color: #fff; /* Cor do texto */
+    padding: 15px 20px; /* Ajusta o espaçamento interno */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo do container da logo */
+.logo-container {
+    flex: 1;
+}
+
+/* Estilo da logo */
+.logo {
+    max-height: 50px; /* Diminuir a altura máxima da logo */
+    vertical-align: middle;
+}
+
+/* Estilo da navegação */
+nav {
+    flex: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; /* Distribui os itens igualmente */
+    align-items: center; /* Alinha verticalmente os itens de navegação */
+    padding: 0;
+    margin: 0;
+    right: 20px;
+}
+
+nav li {
+    margin: 0 10px; /* Diminui o espaçamento horizontal entre os itens do menu */
+}
+
+nav a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 8px 12px; /* Ajusta o espaçamento interno para um clique confortável */
+    font-size: 16px; /* Define um tamanho de fonte mais legível */
+    font-weight: bold; /* Torna o texto mais destacado */
+    transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave para efeitos de hover */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito de hover com fundo transparente */
+    color: #ffcc00; /* Muda a cor do texto no hover para destaque */
+}
+
+/* Estilo do conteúdo principal para compensar o espaço do cabeçalho */
+main {
+    margin-top: 80px; /* Ajuste conforme a nova altura do cabeçalho */
+    padding: 20px;
+}
+.image{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #91ED8F;
+    right: 50px;
+    border-radius: 150px;
+    bottom: 50px; 
+    
+}
