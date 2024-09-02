@@ -1,86 +1,178 @@
-/* Reseta alguns estilos padrão do navegador */
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: 0;
+    font-family: "Anek Devanagari", sans-serif;
 }
+@keyframes cor{
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 
-body {
-    font-family: Arial, sans-serif;
 }
-
-/* Estilo do cabeçalho */
-header {
-    position: fixed; /* Fixa o cabeçalho no topo */
+body{
+    margin: 0;
+}
+a {
+    color: white; 
+    text-decoration: none;
+    font-family: Arial, sans-serif; 
+    font-size: 16px;
+}
+.topo{
+    position: sticky;
+    background-color: rgba(75, 73, 74, 0.9);
+    width: 1256px;
+    height: 100px;
+    z-index: 10;
     top: 0;
-    left: 0;
-    width: 100%; /* Largura total da tela */
-    background-color: rgba(0, 0, 0, 0.7); /* Preto com 70% de opacidade */
-    color: #fff; /* Cor do texto */
-    padding: 15px 20px; /* Ajusta o espaçamento interno */
-    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-
-/* Estilo do container da logo */
-.logo-container {
-    flex: 1;
+.logo{
+    background-image: url(assets/senai.svg);
+    height: 50px;
+    width: 150px;
+    margin-left: 100px;
+    top: 20px;
+    z-index: 20;
+    position: fixed;
 }
-
-/* Estilo da logo */
-.logo {
-    max-height: 50px; /* Diminuir a altura máxima da logo */
-    vertical-align: middle;
+.home{
+    position: fixed;
+    color: white;
+    margin-top: -70px;
+    margin-left: 840px;
+    font-size: 20px;
+    z-index: 20
 }
-
-/* Estilo da navegação */
-nav {
-    flex: 2;
+.cursos{
+    position: fixed;
+    color: white;
+    margin-top: -70px;
+    margin-left: 940px;
+    font-size: 20px;
+    z-index: 20
 }
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between; /* Distribui os itens igualmente */
-    align-items: center; /* Alinha verticalmente os itens de navegação */
-    padding: 0;
-    margin: 0;
-    right: 20px;
+.contatos{
+    position: fixed;
+    color: white;
+    margin-top: -70px;
+    margin-left: 1040px;
+    font-size: 20px;
+    z-index: 20
 }
-
-nav li {
-    margin: 0 10px; /* Diminui o espaçamento horizontal entre os itens do menu */
+.cadastre-se{
+    position: fixed;
+    color: white;
+    margin-top: -70px;
+    margin-left: 1140px;
+    background-color: red;
+    border-bottom: 0px solid;
+    border-radius:10px;
+    font-size: 20px;
+    z-index: 20
 }
-
-nav a {
-    color: #fff; /* Cor do texto dos links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    padding: 8px 12px; /* Ajusta o espaçamento interno para um clique confortável */
-    font-size: 16px; /* Define um tamanho de fonte mais legível */
-    font-weight: bold; /* Torna o texto mais destacado */
-    transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave para efeitos de hover */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
+.fundo{
+    margin-top: -100px;
 }
-
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Efeito de hover com fundo transparente */
-    color: #ffcc00; /* Muda a cor do texto no hover para destaque */
+.img{
+    width: 1256px;
+    height: 550px;
 }
-
-/* Estilo do conteúdo principal para compensar o espaço do cabeçalho */
-main {
-    margin-top: 80px; /* Ajuste conforme a nova altura do cabeçalho */
-    padding: 20px;
+a:hover{
+    color: black;
 }
-.image{
+.home:hover{
+    color: black;
+    
+}
+.cursos:hover{
+    color: black;
+}
+.contatos:hover{
+    color: black;
+}
+.cadastre-se:hover{
+   color: black; 
+   background-color: darkred;
+}
+.acessar{
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid;
+    background-color: rgb(244, 241, 241, 0.8);
+    margin-top: -300px;
+    margin-left: 200px;
+    position: relative;
+    width: 170px;
+    height: 120px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.acessar2{
+    padding: 3px;
+    margin:20px;
+    margin-left: 50px;
+    background-color: red;
+    border-radius: 20px;
+}
+.programa{
+    margin-top: 10px;
+    margin-left: 450px;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+}
+.texto{
+    margin-top: 160px;
+    margin-left: 320px;
+}
+.texto3{
+    margin-top: 10px;
+}
+.zap{
+    margin-left: 500px;
+    margin-bottom: 120px;
+    padding: 5px; 
     position: fixed;
     width: 50px;
     height: 50px;
-    background-color: #91ED8F;
-    right: 50px;
-    border-radius: 150px;
-    bottom: 50px; 
-    
+    bottom: 0; 
+    right: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    border-radius: 50px;
+}
+.zap-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.baixo {
+    width: 1256px; 
+    height: 80px; 
+    background-color: rgba(75, 73, 74, 0.9);
+    border: 0; 
+    bottom: 0;
+    margin-top: 50px;
+}
+.img-baixo{
+    width: 150px;
+    height: 150px;
+    margin-top: -120px;
+    margin-left: 60px;
+}
+.direitos{
+    margin-top: -90px;
+    margin-left: 800px;
+    color: white;
+}
+.programa:hover{
+    animation: cor 3s infinite;
 }
